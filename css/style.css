@@ -1,0 +1,483 @@
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    
+    body {
+        background-color: #f7f9fa;
+    }
+    
+    .header {
+        width: 1100px;
+        height: auto;
+        margin: 0 auto;
+    }
+    
+    .header__firstline {
+        background-color: #ffff;
+        margin: 0 auto;
+        position: relative;
+        height: 65px;
+    }
+    
+    .logo {
+        width: 140px;
+        height: 29.97px;
+        margin: 16px 19px;
+        position: absolute;
+    }
+    
+    .header__input {
+        position: absolute;
+        margin-top: 17px;
+        margin-left: 210px;
+    }
+    
+    .header__input input {
+        border: 1px solid #cccccc;
+        outline: none;
+        border-radius: 5px;
+        padding: 7px 10px;
+        margin-left: 3px;
+        height: 32.38px;
+        width: 558px;
+    }
+    
+    .search {
+        position: absolute;
+        left: 526px;
+        top: 7px;
+        color: #252728;
+        padding: 0 6px;
+    }
+    
+    .search:hover {
+        cursor: pointer;
+    }
+    
+    .icons {
+        position: absolute;
+        color: #fff;
+        font-size: 17px;
+        gap: 15px;
+        left: 800px;
+        top: 17px;
+        text-align: center;
+        display: flex;
+        font-weight: 900;
+    }
+    
+    .icon1 {
+        background: #c0003d;
+        width: 32px;
+        height: 32px;
+        border-radius: 50px;
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .icon1:hover::after {
+        content: "Добавить видео";
+        position: absolute;
+        left: 13%;
+        top: 32px;
+        z-index: 1;
+        background: rgba(0, 0, 0, 0.8);
+        font-family: 'Roboto', Arial, Tahoma, sans-serif;
+        font-size: 11px;
+        font-weight: 600;
+        padding: 5px;
+        border: 7px solid transparent;
+        border-right: 0 solid transparent;
+        border-top: 10px solid #fff;
+        text-align: center;
+        height: 5px;
+    }
+    
+    .icon11 {
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        color: #fff;
+    }
+    
+    .icon2 {
+        background: #79818c;
+        width: 32px;
+        height: 32px;
+        border-radius: 50px;
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .icon2:hover::after {
+        content: "Авторизация";
+        position: absolute;
+        left: 40%;
+        top: 32px;
+        z-index: 1;
+        background: rgba(0, 0, 0, 0.8);
+        font-family: 'Roboto', Arial, Tahoma, sans-serif;
+        font-size: 11px;
+        font-weight: 600;
+        padding: 5px;
+        border: 7px solid transparent;
+        border-right: 0 solid transparent;
+        border-top: 10px solid #fff;
+        text-align: center;
+        width: 80px;
+        height: 5px;
+    }
+    
+    .icon3 {
+        background: #79818c;
+        width: 32px;
+        height: 32px;
+        border-radius: 50px;
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .icon3:hover::after {
+        content: "Регистрация";
+        position: absolute;
+        left: 67%;
+        top: 32px;
+        z-index: 1;
+        background: rgba(0, 0, 0, 0.8);
+        font-family: 'Roboto', Arial, Tahoma, sans-serif;
+        font-size: 11px;
+        font-weight: 600;
+        padding: 5px;
+        border: 7px solid transparent;
+        border-right: 0 solid transparent;
+        border-top: 10px solid #fff;
+        text-align: center;
+        width: 80px;
+        height: 5px;
+    }
+    
+    .icon4 {
+        background: #79818c;
+        width: 32px;
+        height: 32px;
+        border-radius: 50px;
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .icon4:hover::after {
+        content: "Тема оформления";
+        position: absolute;
+        left: 95%;
+        top: 32px;
+        z-index: 1;
+        background: rgba(0, 0, 0, 0.8);
+        font-family: 'Roboto', Arial, Tahoma, sans-serif;
+        font-size: 11px;
+        font-weight: 600;
+        padding: 5px;
+        border: 7px solid transparent;
+        border-right: 0 solid transparent;
+        border-top: 10px solid #fff;
+        text-align: center;
+        width: 100px;
+        height: 5px;
+    }
+    
+    a {
+        text-decoration: none;
+        color: #ccd5da;
+        font-size: 17px;
+        font-family: 'Roboto', Arial, Tahoma, sans-serif;
+    }
+    
+    .icons_lang {
+        position: relative;
+        font-size: 11px;
+        display: flex;
+        gap: 15px;
+        top: 17px;
+        margin-left: 92%;
+        display: flex;
+        font-weight: 600;
+        color: #ffffff;
+    }
+    
+    .lang_rus {
+        background: #c0003d;
+        border-radius: 50px;
+        width: 32px;
+        height: 32px;
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .lang_rus1 {
+        font-size: 11px;
+        color: #eee;
+    }
+    
+    .lang_rus:hover,
+    .icon1:hover {
+        background-color: #e71356;
+    }
+    
+    .lang_rus:hover::after {
+        content: "Русский язык";
+        position: absolute;
+        left: 24%;
+        top: 32px;
+        z-index: 1;
+        background: rgba(0, 0, 0, 0.8);
+        font-family: 'Roboto', Arial, Tahoma, sans-serif;
+        font-size: 11px;
+        font-weight: 600;
+        padding: 5px;
+        border: 7px solid transparent;
+        border-right: 0 solid transparent;
+        border-top: 10px solid #fff;
+        text-align: center;
+        height: 3px;
+        width: 80px;
+    }
+    
+    .lang_uzb {
+        background: #79818c;
+        border-radius: 50px;
+        width: 32px;
+        height: 32px;
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .lang_uzb1 {
+        font-size: 11px;
+        color: #eee;
+    }
+    
+    .lang_uzb:hover,
+    .icon2:hover {
+        background-color: #969aa0;
+    }
+    
+    .lang_uzb:hover::after {
+        content: "O`zbek tili";
+        position: absolute;
+        left: 74%;
+        top: 32px;
+        z-index: 12;
+        background: rgba(0, 0, 0, 0.8);
+        font-family: 'Roboto', Arial, Tahoma, sans-serif;
+        font-size: 11px;
+        font-weight: 600;
+        padding: 5px;
+        border: 7px solid transparent;
+        border-right: 0 solid transparent;
+        border-top: 10px solid #fff;
+        text-align: center;
+        height: 3px;
+        width: 80px;
+    }
+    
+    .header__secondline {
+        display: flex;
+        background: #607d8b;
+        margin: 0 auto;
+        font-weight: 450;
+        height: 40px;
+        justify-content: space-between;
+    }
+    
+    .hsm {
+        padding: 10px;
+        text-align: center;
+    }
+    
+    .hsm:hover {
+        background: #78909c;
+    }
+    
+    a:hover {
+        color: #ffffff;
+    }
+    
+    .vertical {
+        position: relative;
+        padding: 10px;
+        text-align: left;
+        top: -10px;
+    }
+    
+    nav.vertical ul {
+        list-style: none;
+    }
+    
+    nav.vertical a {
+        display: block;
+        color: #ccd5da;
+        text-decoration: none;
+        padding: 10px;
+        background: #607d8b;
+    }
+    
+    nav.vertical li:hover>a {
+        background: #78909c;
+        color: #ffffff;
+    }
+    
+    nav.vertical ul ul {
+        position: absolute;
+        visibility: hidden;
+        opacity: 0;
+        transition: transform 0.1s;
+        transform: translateY(70px);
+        width: 130px;
+        left: 9%;
+        top: -70px;
+    }
+    
+    nav.vertical li:hover>ul {
+        bottom: 200%;
+        visibility: visible;
+        opacity: 1;
+        transform: translateY(70px);
+        background: rgb(255, 255, 255);
+        color: #ffffff;
+        position: relative;
+    }
+    
+    .other {
+        position: relative;
+        color: #eee;
+    }
+    
+    .other:hover {
+        background: #78909c;
+    }
+    
+    .down_icon {
+        font-size: 8px;
+    }
+    /* PC */
+    
+    @media (max-width:1100px) {
+        .logo {
+            width: 200px;
+        }
+        .header__firstline {
+            justify-content: space-between;
+        }
+    }
+    /*laptop*/
+    
+    @media (max-width:760px) {
+        .logo {
+            width: 100px;
+        }
+        .header__secondline {
+            display: block;
+            background-color: #607d8b;
+            flex-wrap: wrap;
+            width: 100%;
+        }
+        .hsm {
+            background-color: #607d8b;
+            flex-wrap: wrap;
+        }
+        .vertical {
+            position: relative;
+            padding: 0;
+            text-align: center;
+            top: -10px;
+        }
+        a {
+            top: 10px;
+        }
+        .icon1,
+        .icon2,
+        .icon3,
+        .icon4 {
+            display: none;
+        }
+        .header__firstline {
+            background-color: #fff;
+        }
+        .lang_rus1 {
+            background-color: #c0003d;
+        }
+        .lang_uzb1 {
+            background-color: #79818c;
+        }
+        nav.vertical li:hover>ul {
+            visibility: visible;
+            opacity: 1;
+            transform: translateY(70px);
+            background: rgb(173, 164, 164);
+            color: #ffffff;
+            position: relative;
+            width: 60%;
+            left: 220px;
+            top: -60px;
+        }
+    }
+    /* Mobile*/
+    
+    @media (max-width:320px) {
+        .header__firstline {
+            background-color: #78909c;
+        }
+        .hsm,
+        .vertical,
+        .vertical_menu,
+        .other {
+            background-color: #cccccc;
+        }
+        a {
+            color: black;
+            background-color: #cccccc;
+            font-size: 50px;
+        }
+        nav.vertical a {
+            color: black;
+            background-color: #ccc;
+        }
+        .icons_lang,
+        .header__input {
+            display: none;
+        }
+        .header__firstline {
+            text-align: center;
+        }
+        .hsm,
+        .other {
+            text-align: left;
+        }
+        nav.vertical li:hover>ul {
+            visibility: visible;
+            opacity: 1;
+            transform: translateX(10px);
+            position: relative;
+            width: 74%;
+            text-align: left;
+            border-left: 2px solid black;
+            top: 10px;
+        }
+        .vertical {
+            top: 0;
+        }
+    }
